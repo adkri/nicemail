@@ -1,0 +1,30 @@
+{
+  "name": "nicemail",
+  "version": "1.0.0",
+  "description": "A easy to use nodejs mailing library with integration for different templates",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/adkri/nicemail.git"
+  },
+  "keywords": [
+    "mail",
+    "nodemail",
+    "mailer",
+    "send-mail",
+    "nicemail",
+    "template",
+    "template-mail"
+  ],
+  "author": "Amit Adhikari",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "handlebars": "^4.0.10",
+    "nodemailer": "^4.0.1",
+    "pug": "^2.0.0-rc.2"
+  }
+}
