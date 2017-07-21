@@ -5,7 +5,9 @@
 
 > npm install --save nicemail
 
-```
+## Usage
+
+```javascript
 const Nicemail = require('nicemail');
 const path = require('path');
 
@@ -43,7 +45,7 @@ nm
 ```
 
 ***templates/simple.hbs:***
-```
+```html
 <div>
  {{ title }}
  <h6>{{ header }}</h6>
