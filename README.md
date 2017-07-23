@@ -23,7 +23,7 @@ const emailConfig = {
 
 const templateConfig = {
     dir: path.join(__dirname,'./template') ,
-    type: 'hbs'
+    type: 'hbs'         //  template type (also supports ejs and jade templates)
 }
 
 const nm = new Nicemail(emailConfig, templateConfig);
