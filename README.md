@@ -5,6 +5,10 @@
 
 > npm install --save nicemail
 
+## Requirements
+ * Node.js >=  6.11.0
+ * ECMAScript >= 6
+
 ## Usage
 
 ```javascript
@@ -27,6 +31,7 @@ const templateConfig = {
 }
 
 const nm = new Nicemail(emailConfig, templateConfig);
+const receipents = ['abc@gmail.com','bcd@gmail.com'];
 
 nm
   .send({
@@ -37,7 +42,7 @@ nm
         header : 'This is header',
         body : 'Body Message'
     },
-    to : ['abc@gmail.com']         // email recipients
+    to : receipents.join(',')    // comma seperated email recipients
   })
   .then(res => console.log('Response: ', res))
   .catch(err => console.log('Errors: ', err));
@@ -50,5 +55,23 @@ nm
  {{ title }}
  <h6>{{ header }}</h6>
  <p>{{ body }}</p>
+</div>
+```
+
+####Other templates
+
+***templates/simple.pug:***
+```html
+.div
+	#{ title }
+	h6 #{ header }
+	p #{ body } 
+```
+***templates/simple.ejs:***
+```html
+<div>
+ <%= title %>
+ <h6><%= header %></h6>
+ <p><%= body %></p>
 </div>
 ```

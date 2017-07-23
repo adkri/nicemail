@@ -1,6 +1,6 @@
 {
   "name": "nicemail",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "An easy to use nodejs mailing library with integration for different templates",
   "main": "index.js",
   "scripts": {
