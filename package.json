@@ -17,11 +17,14 @@
     "send-mail",
     "nicemail",
     "template",
-    "template-mail"
+    "template-mail",
+    "email",
+    "sendmail"
   ],
   "author": "Amit Adhikari",
   "license": "MIT",
   "dependencies": {
+    "app-root-path": "^2.0.1",
     "ejs": "^2.5.6",
     "handlebars": "^4.0.10",
     "nodemailer": "^4.0.1",
